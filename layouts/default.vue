@@ -1,10 +1,31 @@
 <template>
   <div>
+    <div class="main">
+      <div class="main-links">
+        <nuxt-link to="/">Home</nuxt-link>|
+        <nuxt-link to="login">Login</nuxt-link>|
+        <nuxt-link to="secret">Secret</nuxt-link>
+      </div>
+    </div>
     <nuxt />
   </div>
 </template>
 
 <style>
+.main {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-links {
+  width: 30%;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
